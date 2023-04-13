@@ -1,0 +1,45 @@
+<div class="row page">
+    <div class="col-12">
+        <app-progress-bar [step]="5"></app-progress-bar>
+
+        <h1 class="title">What is Jerry Seinfeld’s address in Seinfeld?</h1>
+
+        <form>
+            <h4>Address</h4>
+            <div class="row">
+                <div class="col-md-12 form-group">
+                    <label for="address1">Address 1</label>
+                    <input type="text" class="form-control" id="address1" placeholder="Address 1">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 form-group">
+                    <label for="address2">Address 2</label>
+                    <input type="text" class="form-control" id="address2" placeholder="Address 2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" id="city" placeholder="City">
+                </div>
+                <div class="col-md-3 form-group">
+                    <label for="state">State</label>
+                    <input type="text" class="form-control" id="state" placeholder="State">
+                </div>
+                <div class="col-md-3 form-group">
+                    <label for="zip">Zip Code</label>
+                    <input type="text" class="form-control" id="zip" placeholder="Zip Code">
+                </div>
+            </div>
+        </form>
+
+        <div class="controls d-flex justify-content-between">
+            <button class="btn btn-link prev" routerLink="/step4">
+                <img src="assets/img/back.svg"> 
+                Previous Question
+            </button>
+            <button class="btn btn-warning next" routerLink="/success">Next</button>
+        </div>
+    </div>
+</div>

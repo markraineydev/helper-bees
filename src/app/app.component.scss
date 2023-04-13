@@ -1,0 +1,32 @@
+.header {
+  height: 110px;
+  border-bottom: 4px solid #EAECF0;
+
+  img {
+    margin-top: -10px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+}
+
+.footer {
+  height: 70px;
+  border-top: 1px solid #EAECF0;
+  border-bottom: 1px solid #EAECF0;
+  padding: 0 50px;
+
+  .rights {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .privacy-terms {
+    div {
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 18px;
+      margin-left: 24px;
+      cursor: pointer;
+    }
+  }
+}

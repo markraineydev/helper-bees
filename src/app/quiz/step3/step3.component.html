@@ -1,0 +1,31 @@
+<div class="row page">
+    <div class="col-12">
+        <app-progress-bar [step]="3"></app-progress-bar>
+
+        <h1 class="title">What is your favorite movie?</h1>
+        <h3 class="sub-title">(If you have more than one favorite movie, select <b>Add Favorite Movie</b> to enter its details. )</h3>
+
+        <form class="row">
+            <ng-container *ngFor="let number of [].constructor(count)">
+                <div class="col-md-6 form-group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="title" placeholder="RoboCop">
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="year">Year of Release</label>
+                    <input type="text" class="form-control" id="year" placeholder="1987 not 2014, you monster">
+                </div>
+            </ng-container>
+        </form>
+
+        <button type="button" class="btn btn-outline-dark" (click)="count = count + 1;">Add Favorite Movie</button>
+
+        <div class="controls d-flex justify-content-between">
+            <button class="btn btn-link prev" routerLink="/step2">
+                <img src="assets/img/back.svg"> 
+                Previous Question
+            </button>
+            <button class="btn btn-warning next" routerLink="/step4">Next</button>
+        </div>
+    </div>
+</div>

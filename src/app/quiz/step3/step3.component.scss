@@ -1,0 +1,20 @@
+form {
+  margin-top: 29px;
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+}
+
+button.btn-outline-dark {
+  margin-bottom: 100px;
+  font-size: 16px;
+  border: 1.5px solid #22549F;
+  border-radius: 4px;
+  color: #363636;
+  margin-top: 19px;
+
+  &:hover {
+    color: white;
+  }
+}

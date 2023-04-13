@@ -1,0 +1,61 @@
+<div class="row page">
+    <div class="col-12">
+        <app-progress-bar [step]="4"></app-progress-bar>
+
+        <h1 class="title">What’s your favorite movie snack?</h1>
+        <h3 class="sub-title">&nbsp;</h3>
+
+        <form>
+            <div class="row">
+                <div class="form-check col-md-6">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Popcorn
+                    </label>
+                </div>
+                <div class="form-check col-md-6">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Nachos
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-check col-md-6">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                    <label class="form-check-label" for="flexRadioDefault3">
+                        Junior Mints
+                    </label>
+                </div>
+                <div class="form-check col-md-6">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                    <label class="form-check-label" for="flexRadioDefault4">
+                        Milk Duds
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-check col-md-6">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                    <label class="form-check-label" for="flexRadioDefault5">
+                        Skittles
+                    </label>
+                </div>
+                <div class="form-check col-md-6">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
+                    <label class="form-check-label" for="flexRadioDefault6">
+                        I only watch Criterion Collection films at Arthouses that disallow snacks because there might be a crinkling sound that disrupts other patrons.
+                    </label>
+                </div>
+            </div>
+        </form>
+
+        <div class="controls d-flex justify-content-between">
+            <button class="btn btn-link prev" routerLink="/step3">
+                <img src="assets/img/back.svg"> 
+                Previous Question
+            </button>
+            <button class="btn btn-warning next" routerLink="/step5">Next</button>
+        </div>
+    </div>
+</div>

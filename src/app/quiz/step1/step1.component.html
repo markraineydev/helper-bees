@@ -1,0 +1,78 @@
+<div class="row page">
+    <div class="col-12">
+        <app-progress-bar [step]="1"></app-progress-bar>
+
+        <h1 class="title">My favorite movie genre is:</h1>
+        <h3 class="sub-title">(Check all that apply)</h3>
+
+        <form>
+            <div class="row">
+                <div class="col-md-6 form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="action">
+                    <label class="form-check-label" for="action">Action</label>
+                </div>
+                <div class="col-md-6 form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="western">
+                    <label class="form-check-label" for="western">Western</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="horror">
+                    <label class="form-check-label" for="horror">Horror</label>
+                </div>
+                <div class="col-md-6 form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="romantic">
+                    <label class="form-check-label" for="romantic">Romantic</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="drama">
+                    <label class="form-check-label" for="drama">Drama</label>
+                </div>
+                <div class="col-md-6 form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="comedy">
+                    <label class="form-check-label" for="comedy">Comedy</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="thriller">
+                    <label class="form-check-label" for="thriller">Thriller</label>
+                </div>
+                <div class="col-md-6 form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="buddy-comedy">
+                    <label class="form-check-label" for="buddy-comedy">Kevin Hart Buddy Comedy</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="science">
+                    <label class="form-check-label" for="science">Science Fiction</label>
+                </div>
+                <div class="col-md-6 form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="noir">
+                    <label class="form-check-label" for="noir">Noir</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="fantasy">
+                    <label class="form-check-label" for="fantasy">Fantasy</label>
+                </div>
+                <div class="col-md-6 form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="none">
+                    <label class="form-check-label" for="none">None of the above</label>
+                </div>
+            </div>
+        </form>
+
+        <div class="controls d-flex justify-content-between">
+            <button class="btn btn-link prev" routerLink="/">
+                Exit Assessment
+            </button>
+            <button class="btn btn-warning next" routerLink="/step2">Next</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="progress">
+    <div class="progress-bar bg-success" style="width:19.5%"></div>
+    <div class="progress-bar bg-white" style="width:0.5%"></div>
+    <div class="progress-bar" [ngClass]="step >=2 ? 'bg-success': 'bg-light'" style="width:19.5%"></div>
+    <div class="progress-bar bg-white" style="width:0.5%"></div>
+    <div class="progress-bar" [ngClass]="step >=3 ? 'bg-success': 'bg-light'" style="width:19.5%"></div>
+    <div class="progress-bar bg-white" style="width:0.5%"></div>
+    <div class="progress-bar" [ngClass]="step >=4 ? 'bg-success': 'bg-light'" style="width:19.5%"></div>
+    <div class="progress-bar bg-white" style="width:0.5%"></div>
+    <div class="progress-bar" [ngClass]="step ==5 ? 'bg-success': 'bg-light'" style="width:20%"></div>
+</div>
+<div class="step">{{ step }} of 5</div>
